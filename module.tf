@@ -21,6 +21,7 @@ provider "aws" {
 
 module "vm01" {
     #source = "./ec2"
+    #source = terraform-aws-modules/ec2-instance
     source =  "git::https://github.com/Vishwanathms/tf-templates-aws.git?ref=master"
     ami = var.ami
     instance_type = var.instance_type
