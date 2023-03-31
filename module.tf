@@ -21,7 +21,7 @@ provider "aws" {
 
 module "vm01" {
     #source = "./ec2"
-    source =  git::"https://github.com/Vishwanathms/tf-templates-aws.git?ref=master"
+    source =  "git::https://github.com/Vishwanathms/tf-templates-aws.git?ref=master"
     ami = var.ami
     instance_type = var.instance_type
     vm_name = var.vm_name
